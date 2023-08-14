@@ -1,1 +1,0 @@
-# MAGNET-IITA 2023
