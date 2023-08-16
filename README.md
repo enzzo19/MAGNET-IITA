@@ -90,7 +90,7 @@ style="width:100%; border:0;">
 <p 
 align="center">
 <img src="assets\presentacion\equipo_completo.jpg"
-alt="Foto Enzo"
+alt="Foto Equipo"
 style="width:100%; border:0;">
 </p>
 
@@ -110,8 +110,8 @@ Para poder elegir el Diseño el equipo planeo en una reunion dibujando en una ho
 
 <p 
 align="center">
-<img src="assets\diseño\boceto_hoja.jpg"
-alt="Foto Gabriel"
+<img src="assets\diseño\boceto_hoja_nuevo.jpg"
+alt="Foto Boceto"
 style="width:100%; border:0;">
 </p>
 
@@ -126,6 +126,7 @@ Asi fue como decidieron que las piezas a diseñar iban a ser:
 * La Base
 * El Tope
 * Las piezas de anclaje del sistema de descenso
+* Las Varillas de Separacion de Niveles
 
 Estas piezas fueron teniendo una serie de modificaciones hasta llegar a la version Final de cada una ya que con cada prueba Morena fue adquiriendo experiencia sobre la forma que debia tener para que sean utiles.
 
@@ -133,3 +134,45 @@ La version Final de cada pieza la pueden encontrar en esta [carpeta](https://git
 
 ### Evolucion del Diseño
 
+#### Paracaidas
+
+El Paracaidas tiene las dimensiones de **25cm** de diametro con un **orificio de derrame** o **orificio de ventilacion** y Daiana se encargo de hacer los calculos para poder conseguir o diseñar el correcto.
+
+<p 
+align="center">
+<img src="assets\diseño\paracaidas_v2.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+#### Pieza Tope del Cansat
+Como vieron en el boceto la primera idea de los chicos fue agarrar el paracaidas de un solo lugar en el centro y tirarlo como si fueran los **Soldaditos de Juguete**
+<p 
+align="center">
+<img src="assets\diseño\evolucion_tope.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Esto no resulto del todo bien y decidieron cambiarlo por un sistema donde tiene 3 puntos de agarre y cada cordon esta separado lo que ayudo a que el paracaidas se despliegue de la forma correcta y no se enredaran los cordones, esta misma pieza tiene el proposito de soportar las varillas de fibra de Carbono de la Estructura.
+
+#### Piezas de Agarre del Cordon de los Paracaidas
+
+Con las piezas que sujetan los cordones del paracaidas tuvieron que rediseñarla ya que a las primeras debian hacerle un corte con el minitorno para poder encajar los cordones y eso suponia un punto debil en los agarres, y asi quedo como se aprecia en la imagen a la derecha con un orificio en la parte baja para pasar el cordon y solo poner la pieza haciendo click sobre el tope.
+
+<p 
+align="center">
+<img src="assets\diseño\evolucion_agarre.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+#### Varillas de Separacion de Niveles
+Esta pieza no la tenian prevista en el diseño hasta realizaron las pruebas de Vibracion mas adelante explico por que decidieron ponerle eso al modelo Final !!
+
+<p 
+align="center">
+<img src="assets\diseño\varilla_v1.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
