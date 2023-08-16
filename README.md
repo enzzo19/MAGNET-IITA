@@ -106,6 +106,8 @@ Nuestro **ENFOQUE** será investigar el uso potencial de las mediciones de campo
 
 ## Diseño / Sistema de Descenso
 
+## Encargada : Morena 
+
 Para poder elegir el Diseño el equipo planeo en una reunion dibujando en una hoja, como deberia ser la forma del cilindro maximo que estaba permitido en la competencia, luego fueron agregando los componentes que necesitariamos para la mision primaria, sin conocer del todo aun las dimensiones reales de estos componentes, pero estimando y utilizando los datasheet e internet para poder hacer esas estimaciones lo mas realista posible, finalmente agregaron nuestro sensor a utilizar para la mision secundaria y tuvimos un primer boceto de como seria nuestro CANSAT.
 
 <p 
@@ -173,6 +175,187 @@ Esta pieza no la tenian prevista en el diseño hasta realizaron las pruebas de V
 <p 
 align="center">
 <img src="assets\diseño\varilla_v1.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+## Construccion
+## Encargado: Gabriel
+
+### Lista de Materiales:
+
+* 1 - Heltec ESP32 Lora V2
+  <p 
+  align="center">
+  <img src="https://heltec.org/wp-content/uploads/2020/04/SAM_0748_800X800.png"
+  alt="Foto Evolucion Diseño"
+  style="width:100%; border:0;">
+  </p>
+* 1 - Sensor BMP180
+  <p 
+  align="center">
+  <img src="https://http2.mlstatic.com/D_NQ_NP_627366-MLA52961108357_122022-O.webp"
+  alt="Foto Evolucion Diseño"
+  style="width:100%; border:0;">
+  </p>
+* 1 - SensorDHT22
+  <p 
+  align="center">
+  <img src="https://http2.mlstatic.com/D_NQ_NP_616114-MLA48572457945_122021-O.webp"
+  alt="Foto Evolucion Diseño"
+  style="width:100%; border:0;">
+  </p>
+* 1 - Sensor MPU9250
+  <p 
+  align="center">
+  <img src="https://www.codigoiot.com/wp-content/uploads/2020/02/Taller-Sensor-de-Posicion-Absoluta.png"
+  alt="Foto Evolucion Diseño"
+  style="width:100%; border:0;">
+  </p>
+  
+* 2 - Placas perforadas 10x10cm
+  <p 
+  align="center">
+  <img src="https://sandorobotics.com/wp-content/uploads/2021/02/0358h.jpeg"
+  alt="Foto Evolucion Diseño"
+  style="width:100%; border:0;">
+  </p>
+* 3 - Varilla de Fibra de Carbono de 3mm de diametro y 12 cm de largo
+  <p 
+  align="center">
+  <img src="https://http2.mlstatic.com/D_NQ_NP_859461-MLA47168391791_082021-O.webp"
+  alt="Foto Evolucion Diseño"
+  style="width:100%; border:0;">
+  </p>
+* 1 - Regulador de Tension 7805
+  <p 
+  align="center">
+  <img src="https://www.austral3d.com.ar/img/producto/producto_img/1719_0.jpg"
+  alt="Foto Evolucion Diseño"
+  style="width:100%; border:0;">
+  </p>
+
+* 1 - Switch ON/OFF
+  <p 
+  align="center">
+  <img src="https://http2.mlstatic.com/D_NQ_NP_873422-MLA43878688666_102020-O.webp"
+  alt="Foto Evolucion Diseño"
+  style="width:100%; border:0;">
+  </p>
+
+### Diagrama Electrico
+Para realizar el Diagrama electrico usaron EasyEDA en esta parte es donde mas ayuda necesitaron, la idea fue que Gabriel con la ayuda de Iñaki vallan construyendo los circuitos en Protoboard, probando primero el funcionamiento de los sensores de forma Individual y luego ir acoplando todo en un solo firmware para el CANSAT
+<p 
+align="center">
+<img src="assets\placas\protoboard.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+Una vez estaban seguros de que los circuitos electronicos funcionaban en la Protoboard y el CANSAT cumplia con la Transmision de datos tanto para la mision Primaria como la Secundaria empezaron a hacer los circuito Electricos.
+<p 
+align="center">
+<img src="assets\placas\diagrama_electrico.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Los profes los ayudamos con el diseño de Placas en PCB personalizadas, que mandamos a pedir, que era por ahi lo que pensabamos que se iba a complicar mas, pero lo terminaron haciendo ellos sin problemas ya que entendieron como posicionar los componentes y rutear todo, asi que solo nos quedo la tarea de corroborar que su diseño no hacia un cortocircuito.
+
+### PCB Personalizados
+
+* Base con agujeros
+<p 
+align="center">
+<img src="assets\placas\base_con_agujeros.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+* Piso 1 Componentes
+<p 
+align="center">
+<img src="assets\placas\piso1_componentes.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+* Piso 2 Mision Secundaria
+<p 
+align="center">
+<img src="assets\placas\piso2_mpu9250.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+## Construccion del CANSAT
+Esperando que lleguen las placas pasaba el tiempo y la presentacion se nos venia encima, por lo que decidimos no confiarnos por que sino nos quedariamos sin poder terminar ni probar el CANSAT y decidimos realizar a mano en placas experimentales perforadas, todo el diseño de los circuitos electronicos para nuestro CANSAT, esto fue un gran trabajo por parte de Gabriel que tiene muy buenas habilidades para soldar, y con las herramientas manuales, nos conto que es debido a que ayuda a su papa en un taller de AudioCAR y Electronica.
+
+<p 
+align="center">
+<img src="assets\placas\placas_perforadas.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+## CANSAT TERMINADO
+
+Despues de Terminar solo quedaban ponerle los cables que unian los pisos del CANSAT y estaba listo para poder comenzar a realizar las Pruebas de Funcionamiento.
+
+<p 
+align="center">
+<img src="assets\placas\cansat_final.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+## Estacion Terrestre
+
+## Encargada: Daiana
+
+Para poder programar la estacion terrestre como el firmware del Modulo que seria receptor de los datos Daiana tuvo que aprender a programar en Arduino ya que cuando comenzo contaba con mas habilidades en Python y para poder mejorar y facilitar la experiencia los profes le recomendamos utilizar [Arduino Iot Cloud](https://cloud.arduino.cc/) ya que nos ofrecia la ventaja de que con una especie de Drag and Drop tener una estacion Terrestre Visualizando los datos y algunas graficas en Tiempo Real por lo que solucionaba la parte Grafica, y si costaba un poco aprender a usarlo pero merecia la pena.
+
+* Version Web
+
+Visualizando en Tiempo Real los Datos
+<p 
+align="center">
+<img src="assets\ground_station\estacion_terrestre_web_v1.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Visualizando Grafica en Tiempo Real los Datos
+<p 
+align="center">
+<img src="assets\ground_station\estacion_terrestre_web_v2.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+## Version Movil
+<p 
+align="center">
+<img src="assets\ground_station\estacion_terrestre_movil_v1.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Cuando teniamos funcionando la Estacion Terrestre con Arduino IoT Cloud preguntamos en el foro si era posible tener Wi-Fi en el lugar de lanzamiento o Red de Datos Moviles y nos dijeron que no nos lo aseguraban por lo que es un lugar alejado, esto ya que lo que estabamos usando utilizaba internet para mandar los datos desde nuestro Modulo receptor hacia Arduino IoT Cloud, por recomendacion, decidimos que Daiana haga una estacion Terrestre en Python que lea los datos del puerto Serial, se los pueda visualizar y los guarde en archivos, con esto Dai pudo aprovechar para profundizar un poco mas su conocimiento en Python pero era una tarea contrarreloj para poder tenerlo funcionando.
+
+### Version Escritorio
+
+<p 
+align="center">
+<img src="assets\ground_station\estacion_terrestre_escritorio_v1.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Los archivos que guarda son un archivo descriptivo y uno para analizarlo, pero aun no pudimos llegar a tener datos para analiar por lo que vamos a contar en los Test.
+
+<p 
+align="center">
+<img src="assets\ground_station\telemetria_v1.jpg"
 alt="Foto Evolucion Diseño"
 style="width:100%; border:0;">
 </p>
