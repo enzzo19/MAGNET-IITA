@@ -359,3 +359,216 @@ align="center">
 alt="Foto Evolucion Diseño"
 style="width:100%; border:0;">
 </p>
+
+## Pruebas / Test de Funcionamiento
+
+## Encargado: Iñaki
+
+## Prueba de Temperatura
+
+Elementos utilizados:
+
+* Taper Termico de Tergopor
+* Pistola de Calor
+
+Procedimiento:
+
+1. Encender la estacion Terrestre y el CANSAT y registrar la temperatura antes de la prueba.
+2. Colocar el CANSAT dentro del recipiento Termico y sellarlo.
+3. Encender la Pistola de Calor y colocarla e el orificio del recipiente Termico.
+4. Esperar 2 minutos y verificar si se visualiza el incremento de Temperatura.
+5. Quitar la Pistola de calor.
+6. Esperar 2 Minutos y visualizar si la Temperatura se vuelve a estabilizar a como estaba entes de la prueba.
+
+<p 
+align="center">
+<img src="assets\test\temperatura_v1.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Conclusion:
+
+Pudimos corroborar el correcto funcionamiento de nuestro Sensor de Temperatura, y que la estacion Terrestre visualiza los datos de la prueba, sin embargo tambien nos sirviopara darnos cuenta que el pegamento que estabamos utilizando (POXIPOL) no era el mejor para este tipo de uso asi que decidimos cambiarlo por la Gotita.
+
+## Prueba de Presion / Vacio
+
+Elementos utilizados:
+
+* Globo
+* Botella cortada a la Mitad
+* Cinta Multiuso de Alta Resistencia
+* Aspiradora de Mano
+
+Procedimiento:
+
+1. Encender la estacion Terrestre y el CANSAT y registrar la presion Absoluta antes de la prueba.
+2. Colocar el CANSAT dentro del recipiento de vacio y sellarlo.
+3. Encender la Aspiradora de mano.
+4. Esperar 2 minutos y verificar si se visualiza la disminucion de Presion.
+5. Apagar la Aspiradora de mano.
+6. Esperar 2 Minutos y visualizar si la Presion Absoluta se vuelve a estabilizar a como estaba entes de la prueba.
+
+<p 
+align="center">
+<img src="assets\test\presion.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Conclusion:
+
+Pudimos corroborar el correcto funcionamiento de nuestro Sensor de Presion, y que la estacion Terrestre visualiza los datos de la prueba, sin embargo hubera estado mejorpoder hacer la prueba con una olla a presion o con una Aspiradora Industrial, y necesitabamos sellar bien el recipiente contenedor.
+
+# Prueba de Vibracion
+
+Elementos Utilizados:
+
+* Lijadora Electrica
+* Precintos
+  
+Procedimiento:
+
+1. Encender la estacion Terrestre y el CANSAT y registrar el enviado de los datos de Telemetria antes de la prueba.
+2. Fijar el CANSAT a la Lijadora con los precintos.
+3. Encender la Lijadora.
+4. Esperar 2 minutos.
+5. Apagar la Lijadora.
+6. Esperar 2 Minutos y visualizar el estado de funcionamiento del CANSAT y la integridad de sus partes.
+
+<p 
+align="center">
+<img src="assets\test\vibracion_v1.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Conclusion:
+
+Pudimos corroborar el correcto funcionamiento de nuestro CANSAT sin embargo la Vibracion de la Maquina hizo que los placas perforadas empiecen a deslizarse por las varillas de Fibra de Carbono, por lo que Morena tuvo que diseñar las Varillitas Separadoras que mostramos al principio para pode darle una mayor estabilidad, tambien aseguramos las conexiones de los pines con silicona para asegurarlas y la bateria y la antena con un precinto y cinta doble-fax, esta prueba aunque parecia menor resulto ser la que nos demando que aseguremos la Estructura de nuestro CANSAT.
+
+## Prueba de Caida
+
+Elementos Utilizados:
+
+* Un pedazo de hilo o cuerda de entre 60cm y 80cm
+* Una base firme con una altura de aprox 2m
+  
+Procedimiento:
+
+1. Encender la estacion Terrestre y el CANSAT y registrar el enviado de los datos de Telemetria antes de la prueba.
+2. Fijar el CANSAT desde la mitad de los cordones del paracaidas a un extremo de la cuerda.
+3. Fijar el otro extremo de la cuerda a la base firme desde donde se o va alanzar.
+4. Soltar la cuerda.
+5. Visualizar el estado de funcionamiento del CANSAT y la integridad de sus partes.
+
+<p 
+align="center">
+<img src="assets\test\caida_v1.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Conclusion:
+
+Pudimos corroborar el correcto funcionamiento de nuestro CANSAT aguanto la prueba de Caida y todas las partes siguieron en una sola pieza mientras continuaba transmitiendo los datos a la estacion terrestre.
+
+## Prueba de Peso:
+
+Elementos Utilizados:
+
+* Balanza
+  
+Procedimiento:
+
+1. Encender la Balanza y esperar a que marque 0Kg.
+2. Colocar cada parte del CANSAT por encima de la Balanza.
+3. Registrar la medicion.
+
+<p 
+align="center">
+<img src="assets\test\peso.jpg"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Conclusion:
+
+Pudimos corroborar que nuestro CANSAT con todos los componentes que utiliza se encunetra dentro de los margenes de la competencia.
+
+## Prueba de Vuelo / Lanzamiento
+
+Para poder corroborar el funcionamiento realizando una prueba lo mas Real posible, decidimos utilizar un Dron de gran porte capaz de llevar pesos livianos y que contara con un Tren de Aterrizaje desplegable, para eso nos dirigimos hacia la [CADAER club de amigos del Aeromodelismo](https://goo.gl/maps/sKJwR8qwuQN4Q6Yu9) este es un campo donde realizan pruebas de lanzamientos, pilotan aviones a escala de modelismo, donde estamos muy agradeidos por el buen trato que nos brindaron ya que aparte de realizar nuestra prueba tambien pudimos aprender sobre el Hobby del Aeromodelismo.
+
+Elementos Utilizados:
+
+* Dron
+*  Precintos
+*  Tubos de PVC de distinto diametro.
+  
+Procedimiento:
+
+1. Utilizando el Tren Retractil del Dron armamos un mecanismo que al elevarse cuando el piloto levante las patitas de aterrizaje, nuestro CANSAT que va enganchado pueda caer.
+
+<p 
+align="center">
+<img src="assets\test\drone_preparacion.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+2. Encender la estacion Terrestre, asegurar el CANSAT al Mecanismo y registrar el enviado de los datos de Telemetria antes de la prueba.
+
+<p 
+align="center">
+<img src="assets\test\cansat_asegurado.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+3. Elevar el Dron junto con el CANSAT y registrar la medida de Altitud en la estacion Terrestre.
+
+<p 
+align="center">
+<img src="assets\test\dron_subida_v1.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+4. Soltar el CANSAT a una altura entre 100m y 200m para poder corroborar el funcionamiento del sistema de Descenso y que continua enviando datos a la estacion terrestre.
+
+Conclusion:
+
+Mientras haciamos las pruebas el Piloto del Dron perdio el Control desde el mando, y nuestro CANSAT como su DRON cayeron desde aproximadamente 60m ya que no habia llegado a desplegar las patitas retractiles por lo que se vinieron en picada juntos y el CANSAT sufrio algunos daños.
+
+<p 
+align="center">
+<img src="assets\test\caida_v2.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Pero aunque parece algo malo estas pruebas nos sirvieron para darnos cuenta y aprender de lo siguiente:
+
+* Realizar los Test previos al Drone fue muy bueno ya que ahi fue que aseguramos la estructura, y eso hizo que el CANSAT sufra daños menores.
+
+* Nuestra Estacion Terrestre continua recibiendo datos desde la altura tanto la version web como movil  de escritorio
+
+* Cuando conectamos la Electronica vimos que el regulador que estabamos usando era demasiado fragil, ya que se le desoldaron los capacitores y esto hizo que se pierda la energia, por lo que decidimos cambiarlo por un regulador de Tension 7805.
+
+* Teniamos ya sensores y piezas de repuestos, por lo que reconstruir el CANSAT nos llevo muy poco tiempo y ya contamos con uno totalmente funcional, aparte esperamos tener uno mas completo como repuesto.
+
+## CONCLUSION
+
+Estamos muy agradecidos por permitirnos participar en la competencia y por todo el aprendizaje y experiencia que nos brindaron desde el comienzo, por el feedback enviado tanto desde la plataforma para poder solucionar nuestros inconvenientes como el de Florencia Moya nuestra tutora que estuvo pendiente de nuestros avances a lo largo de la competencia, esperamos poder reunirnos con ustedes y realizar una prueba de lanzamiento real y asi crear un espacio mas en este repositorio y seguir sumando experiencias llenas de aprendizaje.
+
+**El cohete ruge, la emoción se eleva, y el viaje espacial se convierte en realidad.**
+
+<p 
+align="center">
+<img src="logo2_cansat.png"
+alt="Foto Evolucion Diseño"
+style="width:100%; border:0;">
+</p>
+
+Equipo: IITA-SALTA (18864681).
