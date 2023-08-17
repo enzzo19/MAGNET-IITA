@@ -443,6 +443,10 @@ alt="Foto Evolucion Diseño"
 style="width:100%; border:0;">
 </p>
 
+Video:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Py2hboB3tCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Conclusion:
 
 Pudimos corroborar el correcto funcionamiento de nuestro CANSAT sin embargo la Vibracion de la Maquina hizo que los placas perforadas empiecen a deslizarse por las varillas de Fibra de Carbono, por lo que Morena tuvo que diseñar las Varillitas Separadoras que mostramos al principio para pode darle una mayor estabilidad, tambien aseguramos las conexiones de los pines con silicona para asegurarlas y la bateria y la antena con un precinto y cinta doble-fax, esta prueba aunque parecia menor resulto ser la que nos demando que aseguremos la Estructura de nuestro CANSAT.
