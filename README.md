@@ -387,6 +387,8 @@ alt="Foto Evolucion Diseño"
 style="width:100%; border:0;">
 </p>
 
+[Link de Video de Prueba de Temperatura](https://youtu.be/VTKC8T8OjOQ)
+
 Conclusion:
 
 Pudimos corroborar el correcto funcionamiento de nuestro Sensor de Temperatura, y que la estacion Terrestre visualiza los datos de la prueba, sin embargo tambien nos sirviopara darnos cuenta que el pegamento que estabamos utilizando (POXIPOL) no era el mejor para este tipo de uso asi que decidimos cambiarlo por la Gotita.
@@ -443,9 +445,7 @@ alt="Foto Evolucion Diseño"
 style="width:100%; border:0;">
 </p>
 
-Video:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Py2hboB3tCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[Video de Prueba de Vibracion](https://youtu.be/Py2hboB3tCM)
 
 Conclusion:
 
@@ -472,6 +472,8 @@ align="center">
 alt="Foto Evolucion Diseño"
 style="width:100%; border:0;">
 </p>
+
+[Video de Prueba de Caida](https://youtu.be/lD-E8avi6yo)
 
 Conclusion:
 
@@ -551,6 +553,10 @@ align="center">
 alt="Foto Evolucion Diseño"
 style="width:100%; border:0;">
 </p>
+
+[Prueba de Vuelo con Dron](https://youtu.be/d7HWgFIUXFQ)
+
+[Fail de la Prueba de Vuelo con Dron](https://www.youtube.com/shorts/WMEe1llR1y4)
 
 Pero aunque parece algo malo estas pruebas nos sirvieron para darnos cuenta y aprender de lo siguiente:
 
