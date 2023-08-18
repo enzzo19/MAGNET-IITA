@@ -125,6 +125,488 @@
 
 <h2>Nuestra Misión Secundaria:</h2>
 <p>Nuestro Cansat va a usarse para medir el campo magnético de la Tierra en diferentes altitudes y ubicaciones. Estos datos podrían usarse para estudiar el campo magnético de la Tierra y ayudar en una problemática ambiental de la región como la actividad sísmica y volcánica en nuestra provincia.</p>
+<p>Esto es para nosotros una buena **MISIÓN** viéndolo como problemática ambiental, ya que Salta, es una región con una rica historia geológica y una importante actividad volcánica, por lo que estudiar las propiedades magnéticas del área podría ser un proyecto muy interesante y relevante.</p>
+<p>Nuestro **ENFOQUE** será investigar el uso potencial de las mediciones de campos magnéticos para monitorear la actividad volcánica. Los cambios en el campo magnético pueden ser indicativos de actividad subterránea, por lo que desarrollar un sistema para medir y analizar datos de campo magnético en tiempo real podría ayudar a mejorar los sistemas de alerta sísmica temprana y monitoreo de volcanes.</p>
+
+
+
+<h2 class="member-section">Diseño / Sistema de Descenso</h2>
+<h3>Encargada: Morena</h3>
+<p>
+Para poder elegir el Diseño el equipo planeó en una reunión dibujando en una hoja, como debería ser la forma del cilindro máximo que estaba permitido en la competencia, luego fueron agregando los componentes que necesitaríamos para la misión primaria, sin conocer del todo aún las dimensiones reales de estos componentes, pero estimando y utilizando los datasheet e internet para poder hacer esas estimaciones lo más realistas posible, finalmente agregaron nuestro sensor a utilizar para la misión secundaria y tuvimos un primer boceto de cómo sería nuestro CANSAT.
+</p>
+
+<p align="center">
+<img src="assets\diseño\boceto_hoja_nuevo.jpg"
+alt="Foto Boceto"
+style="width:100%; border:0;">
+</p>
+<p>
+En esta etapa fue crucial la <a href="https://www.youtube.com/watch?v=Zfl7T_GsNHY&list=PLGYpcbdUKl0F0Re8deZHd4bWShjPOa0xN&pp=iAQB" target="_blank">capacitación virtual de la CONAE</a> que tomamos para poder definir algunas cuestiones importantes de nuestra primera aproximación en la cual los chicos con cada tópico diferente que veían en las clases, decidían agregar, sacar o modificar alguna parte de nuestro DISEÑO por recomendación de los expertos.
+</p>
+
+
+<h3>Piezas 3D</h3>
+<p>
+Para poder realizar piezas personalizadas, decidimos utilizar tecnología de Impresión 3D ya que Morena hacía poco había podido comprar una y quería aprovechar para aprender a diseñar sus propias piezas, también porque en el Instituto contamos con una gran variedad de impresoras 3D y nos sería fácil poder tener piezas para probar.
+</p>
+<p>
+Así fue como decidieron que las piezas a diseñar iban a ser:
+</p>
+<ul>
+  <li>La Base</li>
+  <li>El Tope</li>
+  <li>Las piezas de anclaje del sistema de descenso</li>
+  <li>Las Varillas de Separación de Niveles</li>
+</ul>
+<p>
+Estas piezas fueron teniendo una serie de modificaciones hasta llegar a la versión final de cada una, ya que con cada prueba Morena fue adquiriendo experiencia sobre la forma que debía tener para que sean útiles.
+</p>
+<p>
+La versión final de cada pieza la pueden encontrar en esta <a href="https://github.com/enzzo19/MAGNET-IITA/tree/main/Piezas%203D" target="_blank">carpeta</a>.
+</p>
+
+<h3>Evolución del Diseño</h3>
+<h4>Paracaídas</h4>
+<p>
+El Paracaídas tiene las dimensiones de <strong>25cm</strong> de diámetro con un <strong>orificio de derrame</strong> o <strong>orificio de ventilación</strong> y Daiana se encargó de hacer los cálculos para poder conseguir o diseñar el correcto.
+</p>
+<p align="center">
+<img src="assets\diseño\paracaidas_v2.jpg"
+alt="Foto Evolución Diseño"
+style="width:100%; border:0;">
+</p>
+
+<!-- ... Previous content ... -->
+
+<h3>Pieza Tope del Cansat</h3>
+<p>
+Como vieron en el boceto, la primera idea de los chicos fue agarrar el paracaídas de un solo lugar en el centro y tirarlo como si fueran los <strong>Soldaditos de Juguete</strong>.
+</p>
+<p align="center">
+<img src="assets\diseño\evolucion_tope.png"
+alt="Foto Evolución Diseño"
+style="width:100%; border:0;">
+</p>
+<p>
+Esto no resultó del todo bien y decidieron cambiarlo por un sistema donde tiene 3 puntos de agarre y cada cordón está separado, lo que ayudó a que el paracaídas se despliegue de la forma correcta y no se enredaran los cordones. Esta misma pieza tiene el propósito de soportar las varillas de fibra de carbono de la estructura.
+</p>
+
+<h3>Piezas de Agarre del Cordón de los Paracaídas</h3>
+<p>
+Con las piezas que sujetan los cordones del paracaídas tuvieron que rediseñarlas, ya que a las primeras debían hacerles un corte con el minitorno para poder encajar los cordones, y eso suponía un punto débil en los agarres. Así quedaron como se aprecia en la imagen a la derecha, con un orificio en la parte baja para pasar el cordón y solo poner la pieza haciendo clic sobre el tope.
+</p>
+<p align="center">
+<img src="assets\diseño\evolucion_agarre.png"
+alt="Foto Evolución Diseño"
+style="width:100%; border:0;">
+</p>
+
+<h3>Varillas de Separación de Niveles</h3>
+<p>
+Esta pieza no la tenían prevista en el diseño hasta que realizaron las pruebas de vibración. Más adelante explicaré por qué decidieron incorporar esto al modelo final.
+</p>
+<p align="center">
+<img src="assets\diseño\varilla_v1.jpg"
+alt="Foto Evolución Diseño"
+style="width:100%; border:0;">
+</p>
+
+<!-- ... Previous content ... -->
+
+<h2>Construccion</h2>
+<h2>Encargado: Gabriel</h2>
+
+<h3>Lista de Materiales:</h3>
+<ul>
+  <li>
+    1 - Heltec ESP32 Lora V2
+    <p align="center">
+      <img src="https://heltec.org/wp-content/uploads/2020/04/SAM_0748_800X800.png"
+           alt="Foto Evolución Diseño"
+           style="width:100%; border:0;">
+    </p>
+  </li>
+  <li>
+    1 - Sensor BMP180
+    <p align="center">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_627366-MLA52961108357_122022-O.webp"
+           alt="Foto Evolución Diseño"
+           style="width:100%; border:0;">
+    </p>
+  </li>
+  <li>
+    1 - Sensor DHT22
+    <p align="center">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_616114-MLA48572457945_122021-O.webp"
+           alt="Foto Evolución Diseño"
+           style="width:100%; border:0;">
+    </p>
+  </li>
+  <li>
+    1 - Sensor MPU9250
+    <p align="center">
+      <img src="https://www.codigoiot.com/wp-content/uploads/2020/02/Taller-Sensor-de-Posicion-Absoluta.png"
+           alt="Foto Evolución Diseño"
+           style="width:100%; border:0;">
+    </p>
+  </li>
+  <li>
+    2 - Placas perforadas 10x10cm
+    <p align="center">
+      <img src="https://sandorobotics.com/wp-content/uploads/2021/02/0358h.jpeg"
+           alt="Foto Evolución Diseño"
+           style="width:100%; border:0;">
+    </p>
+  </li>
+  <li>
+    3 - Varilla de Fibra de Carbono de 3mm de diámetro y 12 cm de largo
+    <p align="center">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_859461-MLA47168391791_082021-O.webp"
+           alt="Foto Evolución Diseño"
+           style="width:100%; border:0;">
+    </p>
+  </li>
+  <li>
+    1 - Regulador de Tensión 7805
+    <p align="center">
+      <img src="https://www.austral3d.com.ar/img/producto/producto_img/1719_0.jpg"
+           alt="Foto Evolución Diseño"
+           style="width:100%; border:0;">
+    </p>
+  </li>
+  <li>
+    1 - Switch ON/OFF
+    <p align="center">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_873422-MLA43878688666_102020-O.webp"
+           alt="Foto Evolución Diseño"
+           style="width:100%; border:0;">
+    </p>
+  </li>
+</ul>
+
+<!-- ... Previous content ... -->
+
+<h3>Diagrama Electrico</h3>
+<p>Para realizar el Diagrama eléctrico usaron EasyEDA en esta parte es donde más ayuda necesitaron, la idea fue que Gabriel con la ayuda de Iñaki vayan construyendo los circuitos en Protoboard, probando primero el funcionamiento de los sensores de forma individual y luego ir acoplando todo en un solo firmware para el CANSAT.</p>
+<p align="center">
+  <img src="assets\placas\protoboard.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+<p>Una vez estaban seguros de que los circuitos electrónicos funcionaban en la Protoboard y el CANSAT cumplía con la Transmisión de datos tanto para la misión Primaria como la Secundaria empezaron a hacer los circuitos Eléctricos.</p>
+<p align="center">
+  <img src="assets\placas\diagrama_electrico.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Los profes los ayudamos con el diseño de Placas en PCB personalizadas, que mandamos a pedir, que era por ahí lo que pensábamos que se iba a complicar más, pero lo terminaron haciendo ellos sin problemas ya que entendieron cómo posicionar los componentes y rutear todo, así que solo nos quedó la tarea de corroborar que su diseño no hacía un cortocircuito.</p>
+
+<h4>PCB Personalizados</h4>
+<p>Base con agujeros</p>
+<p align="center">
+  <img src="assets\placas\base_con_agujeros.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Piso 1 Componentes</p>
+<p align="center">
+  <img src="assets\placas\piso1_componentes.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Piso 2 Mision Secundaria</p>
+<p align="center">
+  <img src="assets\placas\piso2_mpu9250.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<!-- ... Previous content ... -->
+
+<h2>Construcción del CANSAT</h2>
+<p>Esperando que lleguen las placas pasaba el tiempo y la presentación se nos venía encima, por lo que decidimos no confiarnos porque sino nos quedaríamos sin poder terminar ni probar el CANSAT y decidimos realizar a mano en placas experimentales perforadas, todo el diseño de los circuitos electrónicos para nuestro CANSAT, esto fue un gran trabajo por parte de Gabriel que tiene muy buenas habilidades para soldar, y con las herramientas manuales, nos contó que es debido a que ayuda a su papá en un taller de AudioCAR y Electrónica.</p>
+<p align="center">
+  <img src="assets\placas\placas_perforadas.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<h3>CANSAT TERMINADO</h3>
+<p>Después de terminar solo quedaban ponerle los cables que unían los pisos del CANSAT y estaba listo para poder comenzar a realizar las Pruebas de Funcionamiento.</p>
+<p align="center">
+  <img src="assets\placas\cansat_final.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<!-- ... Previous content ... -->
+
+<h2>Estación Terrestre</h2>
+<p>Encargada: Daiana</p>
+<p>Para poder programar la estación terrestre como el firmware del Módulo que sería receptor de los datos, Daiana tuvo que aprender a programar en Arduino ya que cuando comenzó contaba con más habilidades en Python y para mejorar y facilitar la experiencia, los profes le recomendamos utilizar <a href="https://cloud.arduino.cc/" target="_blank">Arduino IoT Cloud</a> ya que nos ofrecía la ventaja de tener una estación terrestre visualizando los datos y algunas gráficas en tiempo real a través de una especie de "arrastrar y soltar", lo que solucionaba la parte gráfica. Aunque le costó un poco aprender a usarlo, valió la pena.</p>
+
+<h3>Versión Web</h3>
+<p>Visualizando en Tiempo Real los Datos</p>
+<p align="center">
+  <img src="assets\ground_station\estacion_terrestre_web_v1.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+<p>Visualizando Gráfica en Tiempo Real los Datos</p>
+<p align="center">
+  <img src="assets\ground_station\estacion_terrestre_web_v2.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<h3>Versión Móvil</h3>
+<p align="center">
+  <img src="assets\ground_station\estacion_terrestre_movil_v1.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Cuando teníamos funcionando la Estación Terrestre con Arduino IoT Cloud, preguntamos en el foro si era posible tener Wi-Fi en el lugar de lanzamiento o Red de Datos Móviles, y nos dijeron que no nos lo aseguraban debido a que el lugar estaba alejado. Esto era un problema, ya que lo que estábamos usando utilizaba internet para enviar los datos desde nuestro Módulo receptor hacia Arduino IoT Cloud. Por recomendación, decidimos que Daiana hiciera una estación terrestre en Python que leyera los datos del puerto serial, los visualizara y los guardara en archivos. Con esto, Daiana pudo profundizar un poco más en su conocimiento en Python, pero era una tarea contrarreloj para poder tenerlo funcionando.</p>
+
+<h3>Versión Escritorio</h3>
+<p align="center">
+  <img src="assets\ground_station\estacion_terrestre_escritorio_v1.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Los archivos que guarda son un archivo descriptivo y uno para analizarlo, pero aún no pudimos llegar a tener datos para analizar por lo que vamos a contar en las Pruebas.</p>
+<p align="center">
+  <img src="assets\ground_station\telemetria_v1.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+
+<h2>Pruebas / Test de Funcionamiento</h2>
+<p>Encargado: Iñaki</p>
+
+<h3>Prueba de Temperatura</h3>
+<p>Elementos utilizados:</p>
+<ul>
+  <li>Taper Térmico de Tergopor</li>
+  <li>Pistola de Calor</li>
+</ul>
+
+<p>Procedimiento:</p>
+<ol>
+  <li>Encender la estación Terrestre y el CANSAT y registrar la temperatura antes de la prueba.</li>
+  <li>Colocar el CANSAT dentro del recipiente Térmico y sellarlo.</li>
+  <li>Encender la Pistola de Calor y colocarla en el orificio del recipiente Térmico.</li>
+  <li>Esperar 2 minutos y verificar si se visualiza el incremento de Temperatura.</li>
+  <li>Quitar la Pistola de calor.</li>
+  <li>Esperar 2 Minutos y visualizar si la Temperatura se vuelve a estabilizar a como estaba antes de la prueba.</li>
+</ol>
+
+<p align="center">
+  <img src="assets\test\temperatura_v1.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Link de Video de Prueba de Temperatura: <a href="https://youtu.be/VTKC8T8OjOQ" target="_blank">https://youtu.be/VTKC8T8OjOQ</a></p>
+
+<p>Conclusion:</p>
+<p>Pudimos corroborar el correcto funcionamiento de nuestro Sensor de Temperatura, y que la estación Terrestre visualiza los datos de la prueba. Sin embargo, también nos sirvió para darnos cuenta de que el pegamento que estábamos utilizando (POXIPOL) no era el mejor para este tipo de uso, así que decidimos cambiarlo por la Gotita.</p>
+
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/VTKC8T8OjOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h2>Prueba de Presión / Vacío</h2>
+<p>Elementos utilizados:</p>
+<ul>
+  <li>Globo</li>
+  <li>Botella cortada a la Mitad</li>
+  <li>Cinta Multiuso de Alta Resistencia</li>
+  <li>Aspiradora de Mano</li>
+</ul>
+
+<p>Procedimiento:</p>
+<ol>
+  <li>Encender la estación Terrestre y el CANSAT y registrar la presión Absoluta antes de la prueba.</li>
+  <li>Colocar el CANSAT dentro del recipiente de vacío y sellarlo.</li>
+  <li>Encender la Aspiradora de mano.</li>
+  <li>Esperar 2 minutos y verificar si se visualiza la disminución de Presión.</li>
+  <li>Apagar la Aspiradora de mano.</li>
+  <li>Esperar 2 Minutos y visualizar si la Presión Absoluta vuelve a estabilizarse a como estaba antes de la prueba.</li>
+</ol>
+
+<p align="center">
+  <img src="assets\test\presion.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Conclusion:</p>
+<p>Pudimos corroborar el correcto funcionamiento de nuestro Sensor de Presión, y que la estación Terrestre visualiza los datos de la prueba. Sin embargo, hubiera estado mejor poder hacer la prueba con una olla a presión o con una Aspiradora Industrial, y necesitábamos sellar bien el recipiente contenedor.</p>
+
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/IQyRgFK-qn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<h1>Prueba de Vibración</h1>
+<p>Elementos Utilizados:</p>
+<ul>
+  <li>Lijadora Eléctrica</li>
+  <li>Precintos</li>
+</ul>
+
+<p>Procedimiento:</p>
+<ol>
+  <li>Encender la estación Terrestre y el CANSAT y registrar el envío de los datos de Telemetría antes de la prueba.</li>
+  <li>Fijar el CANSAT a la Lijadora con los precintos.</li>
+  <li>Encender la Lijadora.</li>
+  <li>Esperar 2 minutos.</li>
+  <li>Apagar la Lijadora.</li>
+  <li>Esperar 2 Minutos y visualizar el estado de funcionamiento del CANSAT y la integridad de sus partes.</li>
+</ol>
+
+<p align="center">
+  <img src="assets\test\vibracion_v1.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Conclusion:</p>
+<p>Pudimos corroborar el correcto funcionamiento de nuestro CANSAT. Sin embargo, la vibración de la máquina hizo que las placas perforadas empiecen a deslizarse por las varillas de Fibra de Carbono, por lo que Morena tuvo que diseñar las Varillitas Separadoras que mostramos al principio para darle una mayor estabilidad. También aseguramos las conexiones de los pines con silicona para asegurarlas, y la batería y la antena con un precinto y cinta doble faz. Esta prueba, aunque parecía menor, resultó ser la que nos demandó que aseguremos la Estructura de nuestro CANSAT.</p>
+
+
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/Py2hboB3tCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<h1>Prueba de Caída</h1>
+<p>Elementos Utilizados:</p>
+<ul>
+  <li>Un pedazo de hilo o cuerda de entre 60cm y 80cm</li>
+  <li>Una base firme con una altura de aprox 2m</li>
+</ul>
+
+<p>Procedimiento:</p>
+<ol>
+  <li>Encender la estación Terrestre y el CANSAT y registrar el envío de los datos de Telemetría antes de la prueba.</li>
+  <li>Fijar el CANSAT desde la mitad de los cordones del paracaídas a un extremo de la cuerda.</li>
+  <li>Fijar el otro extremo de la cuerda a la base firme desde donde se va a lanzar.</li>
+  <li>Soltar la cuerda.</li>
+  <li>Visualizar el estado de funcionamiento del CANSAT y la integridad de sus partes.</li>
+</ol>
+
+<p align="center">
+  <img src="assets\test\caida_v1.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Conclusion:</p>
+<p>Pudimos corroborar el correcto funcionamiento de nuestro CANSAT. Aguantó la prueba de Caída y todas las partes siguieron en una sola pieza mientras continuaba transmitiendo los datos a la estación terrestre.</p>
+
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/lD-E8avi6yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h1>Prueba de Peso</h1>
+<p>Elementos Utilizados:</p>
+<ul>
+  <li>Balanza</li>
+</ul>
+
+<p>Procedimiento:</p>
+<ol>
+  <li>Encender la Balanza y esperar a que marque 0Kg.</li>
+  <li>Colocar cada parte del CANSAT por encima de la Balanza.</li>
+  <li>Registrar la medición.</li>
+</ol>
+
+<p align="center">
+  <img src="assets\test\peso.jpg"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Conclusion:</p>
+<p>Pudimos corroborar que nuestro CANSAT con todos los componentes que utiliza se encuentra dentro de los márgenes de la competencia.</p>
+
+
+<h1>Prueba de Vuelo / Lanzamiento</h1>
+<p>Para poder corroborar el funcionamiento realizando una prueba lo más real posible, decidimos utilizar un Dron de gran porte capaz de llevar pesos livianos y que contara con un Tren de Aterrizaje desplegable, para eso nos dirigimos hacia la <a href="https://goo.gl/maps/sKJwR8qwuQN4Q6Yu9">CADAER club de amigos del Aeromodelismo</a>. Este es un campo donde realizan pruebas de lanzamientos, pilotan aviones a escala de modelismo, donde estamos muy agradecidos por el buen trato que nos brindaron ya que aparte de realizar nuestra prueba también pudimos aprender sobre el Hobby del Aeromodelismo.</p>
+
+<p>Elementos Utilizados:</p>
+<ul>
+  <li>Dron</li>
+  <li>Precintos</li>
+  <li>Tubos de PVC de distinto diámetro.</li>
+</ul>
+
+<p>Procedimiento:</p>
+<ol>
+  <li>Utilizando el Tren Retráctil del Dron armamos un mecanismo que al elevarse cuando el piloto levante las patitas de aterrizaje, nuestro CANSAT que va enganchado pueda caer.</li>
+</ol>
+
+<p align="center">
+  <img src="assets\test\drone_preparacion.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<ol start="2">
+  <li>Encender la estación Terrestre, asegurar el CANSAT al Mecanismo y registrar el enviado de los datos de Telemetría antes de la prueba.</li>
+</ol>
+
+<p align="center">
+  <img src="assets\test\cansat_asegurado.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<ol start="3">
+  <li>Elevar el Dron junto con el CANSAT y registrar la medida de Altitud en la estación Terrestre.</li>
+</ol>
+
+<p align="center">
+  <img src="assets\test\dron_subida_v1.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<ol start="4">
+  <li>Soltar el CANSAT a una altura entre 100m y 200m para poder corroborar el funcionamiento del sistema de Descenso y que continúa enviando datos a la estación terrestre.</li>
+</ol>
+
+<p>Conclusion:</p>
+<p>Mientras hacíamos las pruebas el Piloto del Dron perdió el Control desde el mando, y nuestro CANSAT como su DRON cayeron desde aproximadamente 60m ya que no había llegado a desplegar las patitas retractiles por lo que se vinieron en picada juntos y el CANSAT sufrió algunos daños.</p>
+
+<p align="center">
+  <img src="assets\test\caida_v2.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/d7HWgFIUXFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p><a href="https://www.youtube.com/shorts/WMEe1llR1y4">Fail de la Prueba de Vuelo con Dron</a></p>
+
+<p>Pero aunque parece algo malo estas pruebas nos sirvieron para darnos cuenta y aprender de lo siguiente:</p>
+<ul>
+  <li>Realizar los Test previos al Drone fue muy bueno ya que ahí fue que aseguramos la estructura, y eso hizo que el CANSAT sufra daños menores.</li>
+  <li>Nuestra Estación Terrestre continua recibiendo datos desde la altura tanto la versión web como móvil de escritorio.</li>
+  <li>Cuando conectamos la Electrónica vimos que el regulador que estábamos usando era demasiado frágil, ya que se le desoldaron los capacitores y esto hizo que se pierda la energía, por lo que decidimos cambiarlo por un regulador de Tensión 7805.</li>
+  <li>Teníamos ya sensores y piezas de repuestos, por lo que reconstruir el CANSAT nos llevó muy poco tiempo y ya contamos con uno totalmente funcional, aparte esperamos tener uno más completo como repuesto.</li>
+</ul>
+
+<h2>CONCLUSION</h2>
+<p>Estamos muy agradecidos por permitirnos participar en la competencia y por todo el aprendizaje y experiencia que nos brindaron desde el comienzo, por el feedback enviado tanto desde la plataforma para poder solucionar nuestros inconvenientes como el de Florencia Moya nuestra tutora que estuvo pendiente de nuestros avances a lo largo de la competencia, esperamos poder reunirnos con ustedes y realizar una prueba de lanzamiento real y así crear un espacio más en este repositorio y seguir sumando experiencias llenas de aprendizaje.</p>
+
+<p align="center">
+  <img src="logo2_cansat.png"
+       alt="Foto Evolución Diseño"
+       style="width:100%; border:0;">
+</p>
+
+<p>Equipo: IITA-SALTA (18864681).</p>
 
 
 </body>
